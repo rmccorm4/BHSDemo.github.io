@@ -52,7 +52,7 @@ class Player(pygame.sprite.Sprite):
         width = 40
         height = 60
         self.image = pygame.Surface([width, height])
-        self.image.fill(BLACK)
+        self.image.fill(RED)
  
         # Set a referance to the image rect.
         self.rect = self.image.get_rect()
@@ -128,11 +128,11 @@ class Player(pygame.sprite.Sprite):
     # Player-controlled movement:
     def go_left(self):
         """ Called when the user hits the left arrow. """
-        self.change_x = -6
+        self.change_x = -50
  
     def go_right(self):
         """ Called when the user hits the right arrow. """
-        self.change_x = 6
+        self.change_x = 50
  
     def stop(self):
         """ Called when the user lets off the keyboard. """
